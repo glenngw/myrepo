@@ -8,6 +8,8 @@ date: "2025-10-15"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(reticulate)
+use_python("/opt/homebrew/Caskroom/miniforge/base/envs/bioinfo/bin/python", required = TRUE)
 ```
 
 ## R Markdown
@@ -29,3 +31,5 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
